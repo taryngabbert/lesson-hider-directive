@@ -1,0 +1,15 @@
+<div class="lessonDiv">
+
+  <input type="checkbox"
+        ng-model= "checked"
+        ng-click= "checkLesson()">
+  </input>
+  <h6>CHECK BOX IF DONE</h6>
+
+  <li>{{lesson}}</li>
+  <br>
+
+  <button ng-click="dayAlert({lesson: lesson, day: lessonDay})" class="lessonButton">Click for day</button>
+  <button ng-click="deleteLesson({lesson: lesson})" class= "lessonButton"> Delete Lesson </button>
+  <br>
+</div>
